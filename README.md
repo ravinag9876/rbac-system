@@ -124,19 +124,13 @@ To create your first Admin user and test the Role-Based Access Control logic, us
 
 ```bash
 
-curl -X POST http://localhost:5000/api/auth/register \\
-
-&#x20; -H "Content-Type: application/json" \\
-
-&#x20; -d '{
-
-&#x20;   "username": "admin\_test",
-
-&#x20;   "password": "securepassword123",
-
-&#x20;   "role": "Admin"
-
-&#x20; }'
+curl -X POST http://localhost:5000/api/auth/register \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "admin_test",
+  "password": "securepassword123",
+  "role": "Admin"
+}'
 
 ```
 
